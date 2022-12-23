@@ -1,0 +1,32 @@
+Override -> služi za obradu iste nasljeđene metode iz neke druge klase, nasljeđivanje ključna riječ extends, apstraktna klasa IZ KLASE U KLASU
+Enkapsulacija -> služi za privatiziranje podataka koji se onda kasnije mogu postavljati i dohvaćati sa getterima i setterima
+Polimorfizam -> služi za nasljeđivanje metoda iz ostalih klasa parent, mogu se nakon nasljeđivanja dodatno obrađivati, tj. prikazati u više oblika, ključna riječ extends
+inherited -> naslijediti
+Overload -> služi za postavljanje više metoda istih naziva koje onda moraju sadržavati različite argumente ili tipove da bi radile, ISTA KLASA
+static -> svojstvo klase ili metoda klase se označava sa public static int ....
+final -> svojstvo klase govori da je finalna i ne može se naslijediti
+interface -> klasa sa popisom naredbi
+default metoda -> kada je default mora biti definirna, mora obavljati neke naredbe
+
+
+abstraktna klasa u C++ znači da sadrži virtualne metode koje se kasnije prosljeđuju sljedećoj klasi te se obrađuju
+npr:
+class Matematika{
+
+  virtual int povrsina() = 0;
+
+class Pravokutnik : public Matematika{
+
+  int povrsina(){
+     return visina * sirina;
+}
+
+
+C++
+Ako je metoda apstraktna i sadržava virtualne metode, one se moraju riješiti da bi se instancirao objekt
+Apstraktna metoda primjer:
+  virtual int sum() = 0  --> .h
+ 
+ int Klasa::sum(){ --> .cpp
+retrun a + b;
+}

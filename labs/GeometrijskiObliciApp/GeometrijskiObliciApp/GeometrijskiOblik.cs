@@ -1,0 +1,11 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GeometrijskiObliciApp {
+    abstract class GeometrijskiOblik {
+        public abstract string Opis();
+    }
+}
